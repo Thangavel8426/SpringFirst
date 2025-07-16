@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.login-wrap {
+  width: 100%;
+  max-width: 420px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.login-html {
+  width: 100%;
+}
+
+.tab {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  cursor: default;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.group {
+  margin-bottom: 18px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s, border 0.3s;
+}
+
+.input::placeholder {
+  color: #e0e0e0;
+}
+
+.input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 2px #36d1dc;
+}
+
+.check {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.button {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #5b86e5, #36d1dc);
+}
+
+.hr {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+  border: none;
+}
+
+.foot-lnk {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.foot-lnk a,
+.foot-lnk label {
+  color: #cce6ff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.role-checkbox-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.role-checkbox {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Hide the tabs' radio buttons */
+input[type="radio"] {
+  display: none;
+}
