@@ -74,6 +74,8 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(Arrays.asList(
             "http://localhost:3000",
+            "https://sb-project.vercel.app",
+            "https://sb-project-frontend.vercel.app",
             "https://your-frontend-domain.vercel.app"
         ));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
