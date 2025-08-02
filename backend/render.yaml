@@ -9,7 +9,7 @@ services:
       - key: SPRING_PROFILES_ACTIVE
         value: production
       - key: SPRING_DATASOURCE_URL
-        value: "jdbc:mysql://gondola.proxy.rlwy.net:24482/railway?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true"
+        value: "jdbc:mysql://gondola.proxy.rlwy.net:24482/railway?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false&maxReconnects=10"
       - key: SPRING_DATASOURCE_USERNAME
         value: "root"
       - key: SPRING_DATASOURCE_PASSWORD
@@ -19,6 +19,6 @@ services:
       - key: JWT_EXPIRATION
         value: "86400000"
       - key: SPRING_WEB_CORS_ALLOWED_ORIGINS
-        value: "https://your-frontend-domain.vercel.app"
+        value: "https://sb-project.vercel.app,https://sb-project-frontend.vercel.app,http://localhost:3000"
       - key: SERVER_PORT
         value: "8080" 
