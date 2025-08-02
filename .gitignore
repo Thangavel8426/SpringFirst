@@ -91,6 +91,7 @@ buildNumber.properties
 application-*.properties
 !application.properties
 !application-production.properties
+!application-docker.properties
 
 # Database
 *.db
@@ -118,4 +119,8 @@ uploads/
 *.jar
 *.rar
 *.tar
-*.zip 
+*.zip
+
+# Docker
+.dockerignore
+docker-compose.override.yml 
