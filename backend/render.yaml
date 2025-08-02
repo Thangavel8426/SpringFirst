@@ -4,6 +4,7 @@ services:
     env: docker
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
+    plan: starter
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: production

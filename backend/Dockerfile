@@ -33,12 +33,11 @@ COPY --from=0 /app/target/lab-experiment-logbook-0.0.1-SNAPSHOT.jar app.jar
 # Create uploads directory
 RUN mkdir -p uploads
 
-# Expose port
+# Expose port (Render will provide the actual port)
 EXPOSE 8080
 
 # Set environment variables
 ENV SPRING_PROFILES_ACTIVE=production
-ENV SERVER_PORT=8080
 
-# Run the application
-ENTRYPOINT ["java", "-jar", "app.jar"] 
+# Run the application with Render's port
+CMD ["sh", "-c", "java -jar app.jar --server.port=${PORT:-8080}"] 
